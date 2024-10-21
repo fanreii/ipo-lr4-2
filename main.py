@@ -1,3 +1,4 @@
-numbers = list(map(int, input("Введите числа через пробел: ").split())) # создание нового списка с квадратами чисел
-squares = [number**2 for number in numbers] # цикл for с условием
-print(squares) # вывод результата
+numbers = input("введите значения ").split() # получение списка с клавиатуры 
+numbers = [int(num) for num in numbers] # конвертирование полученной строки в целочисленный тип данных
+for num in numbers: # цикло for для каждого элемента списка
+    print(num ** 2) # вывод значения
